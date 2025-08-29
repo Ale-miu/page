@@ -115,6 +115,11 @@
         </div>
     </header>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links ul');
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
